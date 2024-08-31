@@ -1,9 +1,5 @@
 package Pages.Services.InternalServices.DigitalIdRequests.NewId.Steper.IdType;
-
 import com.codeborne.selenide.SelenideElement;
-
-import java.util.Arrays;
-
 import static com.codeborne.selenide.Selenide.$x;
 
 public class IdTypeStepPage {
@@ -15,7 +11,7 @@ public class IdTypeStepPage {
     public final SelenideElement nextButton = $x("//*[@id=\"digitalIdForm\"]/div[3]/div[2]/button");
 
     //Пробовал сделать метод hasOptions по инструкции с чата ГПТ
-    public boolean hasOptions(String... expectedOptions) {
-        return $x("//div[@role='combobox' and contains(@class, 'ng-input')]").text().contains(Arrays.asList(expectedOptions));
-    }
-}
+//     public boolean hasOptions(String... expectedOptions) {
+//         return $x("//div[@role='combobox' and contains(@class, 'ng-input')]").text().contains(Arrays.asList(expectedOptions));
+//     }
+ }
