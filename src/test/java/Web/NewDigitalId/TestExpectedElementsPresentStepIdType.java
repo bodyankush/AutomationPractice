@@ -1,11 +1,11 @@
 package Web.NewDigitalId;
 import Pages.App.*;
-import Web.Login.NeomUserCanBeSuccessfullyLoggedIn;
+import Web.Login.TestNeomUserCanBeSuccessfullyLoggedIn;
 import org.junit.jupiter.api.BeforeEach;
 import org.testng.annotations.*;
 import static com.codeborne.selenide.Condition.*;
 
-public class ExpectedElementsArePresentAtStepIdType extends NeomUserCanBeSuccessfullyLoggedIn {
+public class TestExpectedElementsPresentStepIdType extends TestNeomUserCanBeSuccessfullyLoggedIn {
     private App app;
     private InternalServices internalServices; 
     private NewDigitalIdRequest newDigitalIdRequest;
@@ -16,7 +16,7 @@ public class ExpectedElementsArePresentAtStepIdType extends NeomUserCanBeSuccess
     };
 
     @Test
-    public void expectedElementsArePresentAtStepIdType(){
+    public void ExpectedelementsArePresentAtStepIdType(){
         app.services.servicesButton.click();
         internalServices.digitalIdRequestsButton.click();
         newDigitalIdRequest.newDigitalIdRequestsButton.click();

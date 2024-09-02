@@ -3,7 +3,7 @@ import org.testng.annotations.Test;
 import Pages.Login.LoginElementsPage;
 import static com.codeborne.selenide.Selenide.open;
 
-public class NeomUserCanBeSuccessfullyLoggedIn {
+public class TestNeomUserCanBeSuccessfullyLoggedIn {
     @Test
     public void loginFlow(){
         open("https://mysecuritytest.neom.com/");
