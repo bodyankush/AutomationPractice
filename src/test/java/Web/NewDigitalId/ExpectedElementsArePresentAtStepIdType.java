@@ -1,6 +1,6 @@
-package Web.TestCases.NewDigitalId;
+package Web.NewDigitalId;
 import Pages.App.*;
-import Web.TestCases.Login.NeomUserCanBeSuccessfullyLoggedIn;
+import Web.Login.NeomUserCanBeSuccessfullyLoggedIn;
 import org.junit.jupiter.api.BeforeEach;
 import org.testng.annotations.*;
 import static com.codeborne.selenide.Condition.*;
@@ -10,11 +10,6 @@ public class ExpectedElementsArePresentAtStepIdType extends NeomUserCanBeSuccess
     private InternalServices internalServices; 
     private NewDigitalIdRequest newDigitalIdRequest;
        
-    @BeforeMethod
-    public void setUp(){
-        app = new App();
-        newDigitalIdRequest = new NewDigitalIdRequest();
-    }
     @BeforeEach
     public void login() {
         loginFlow();
@@ -32,9 +27,9 @@ public class ExpectedElementsArePresentAtStepIdType extends NeomUserCanBeSuccess
         newDigitalIdRequest.idTypeStep.backButton.shouldBe(enabled);
         newDigitalIdRequest.idTypeStep.nextButton.shouldBe(disabled);
         newDigitalIdRequest.idTypeStep.stepNaming.shouldHave(text("ID type"));
-        
         newDigitalIdRequest.idTypeStep.stepNaming.shouldHave(text("ID type"));
     }
+
 //     @Test
 //     public void expectedValuesArePresentAtIdTypeDropdown(){
 //         app.services.servicesButton.click();

@@ -1,4 +1,4 @@
-package Web.TestCases.Login;
+package Web.Login;
 import org.testng.annotations.Test;
 import Pages.Login.LoginElementsPage;
 import static com.codeborne.selenide.Selenide.open;

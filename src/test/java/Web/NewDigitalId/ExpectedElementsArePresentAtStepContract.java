@@ -1,4 +1,4 @@
-package Web.TestCases.NewDigitalId;
+package Web.NewDigitalId;
 
 public class ExpectedElementsArePresentAtStepContract {
 }
