@@ -6,6 +6,6 @@ public class NewDigitalIdRequest extends NewDigitalIdRequestPage {
     public IdTypeStepPage idTypeStep;
 
     public NewDigitalIdRequest() {
-        idTypeStep = new IdTypeStep();
+        idTypeStep = new IdTypeStepPage();
     }
 }

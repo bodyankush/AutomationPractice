@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Condition.*;
 
 public class TestExpectedElementsPresentStepIdType extends TestNeomUserCanBeSuccessfullyLoggedIn {
     private App app;
-    private InternalServices internalServices; 
+   private InternalServices internalServices; 
     private NewDigitalIdRequest newDigitalIdRequest;
        
     @BeforeEach
@@ -29,7 +29,7 @@ public class TestExpectedElementsPresentStepIdType extends TestNeomUserCanBeSucc
         newDigitalIdRequest.idTypeStep.stepNaming.shouldHave(text("ID type"));
         newDigitalIdRequest.idTypeStep.stepNaming.shouldHave(text("ID type"));
     }
-
+        
 //     @Test
 //     public void expectedValuesArePresentAtIdTypeDropdown(){
 //         app.services.servicesButton.click();
